@@ -1,0 +1,246 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F1FAEE;
+}
+
+h1 {
+    font-size: 38px;
+    font-weight: bold;
+    background: linear-gradient(to right, #1D3557, #457B9D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: normal;
+    color: #232323;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: bold;
+    background: linear-gradient(to right, #1D3557, #457B9D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar {
+    position: sticky;
+    top: 30px;
+    z-index: 100;
+}
+
+.container-fluid {
+    background-color: #F1FAEE;
+    width: 380px;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 19px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item {
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #232323;
+    font-weight: 600;
+    transition: transform 0.1s ease;
+    transition: color 0.2s ease, font-weight 0.1s ease;
+}
+
+.nav-link:hover {
+    transform: scale(1.05);
+}
+
+.nav-item .nav-link.active {
+    background: linear-gradient(to right, #1D3557, #457B9D);
+    color: #F1FAEE !important;
+    font-weight: bold;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.nav-item .nav-link.active:hover {
+    transform: scale(1.02);
+}  
+
+.btn-lg {
+    height: 40px;
+    border-radius: 18px;
+    line-height: 40px;
+    text-align: center;
+    display: inline-block;
+    padding: 0 30px;
+    color: #F1FAEE;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.btn-lg:hover {
+    transform: scale(1.05);
+    color: #F1FAEE;
+}
+
+.btn-md {
+    height: 28px;
+    border-radius: 11px;
+    line-height: 28px;
+    text-align: center;
+    display: inline-block;
+    padding: 0 20px;
+    color: #F1FAEE;
+    font-size: 11px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-md:hover {
+    color: #F1FAEE;
+}
+
+.btn-gradient-primary {
+    background: linear-gradient(to right, #1D3557, #457B9D);
+    border: none;
+}
+
+.hero {
+    padding: 100px 0;
+}
+
+.hero img {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.hero .sosmed img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero .sosmed img:hover {
+    transform: scale(1.05);
+}
+
+.hero p {
+    font-size: 14px;
+    font-weight: normal;
+    color: #232323;
+    margin-top: 24px;
+    margin-bottom: 5px;
+}
+
+.about {
+    padding: 100px 0;
+}
+
+.about p {
+    text-indent: 3em;
+    font-size: 15px;
+    font-weight: normal;
+    color: #232323;
+    text-align: justify;
+}
+
+.about img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.education {
+    padding: 100px 0;
+}
+
+.education img {
+    height: 200px;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.education h4 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #232323
+}
+
+.education .date {
+    font-size: 12px;
+    font-weight: normal;
+    color: #232323;
+}
+
+.education p {
+    font-size: 14px;
+    font-weight: normal;
+    color: #232323;
+}
+
+.work-experience {
+    padding: 100px 0;
+}
+
+.work-experience img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.work-experience h4 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #232323
+}
+
+.work-experience p {
+    font-size: 14px;
+    font-weight: normal;
+    color: #232323;
+    margin: 5px 0;
+}
+
+.work-experience h5 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #232323;
+}
+
+.work-experience .tech img {
+    height: 60px;
+    width: auto;
+    max-width: 60px;
+}
+
+.work-experience .tech p {
+    font-size: 12px;
+    font-weight: 500;
+    color: #232323;
+}
+
+.work-experience .tech {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
