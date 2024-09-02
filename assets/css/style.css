@@ -119,15 +119,24 @@ h3 {
 }
 
 .hero {
-    padding: 100px 0;
+    padding: 100px 20px;
 }
 
-.hero img {
+@keyframes unevenBorderRadius {
+    0%, 100% {
+        border-radius: 50% 30% 50% 30%;
+    }
+    50% {
+        border-radius: 30% 50% 30% 50%;
+    }
+}
+
+.hero .img {
     width: 270px;
     height: 270px;
-    border-radius: 50%;
+    border-radius: 50% 20% 50% 20%;
     object-fit: cover;
-    margin-bottom: 20px;
+    animation: unevenBorderRadius 6s ease-in-out infinite;
 }
 
 .hero .sosmed img {
@@ -153,7 +162,7 @@ h3 {
 }
 
 .about {
-    padding: 100px 0;
+    padding: 100px 20px;
 }
 
 .about p {
@@ -167,11 +176,12 @@ h3 {
 .about img {
     width: 100%;
     max-width: 100%;
-    height: auto;
+    height: 230px;
+    object-fit: cover;
 }
 
 .education {
-    padding: 100px 0;
+    padding: 100px 20px;
 }
 
 .education img {
@@ -199,7 +209,7 @@ h3 {
 }
 
 .work-experience {
-    padding: 100px 0;
+    padding: 100px 20px;
 }
 
 .work-experience img {
@@ -225,6 +235,83 @@ h3 {
     font-size: 24px;
     font-weight: 600;
     color: #232323;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes tiltRight {
+    0%, 100% {
+        transform: rotate(-15deg);
+    }
+    25% {
+        transform: rotate(15deg);
+    }
+    50% {
+        transform: rotate(-15deg);
+    }
+    75% {
+        transform: rotate(15deg);
+    }
+}
+
+@keyframes tiltLeft {
+    0%, 100% {
+        transform: rotate(15deg);
+    }
+    25% {
+        transform: rotate(-15deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    75% {
+        transform: rotate(-15deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes zoomInOut {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.bounce {
+    animation: bounce 2s ease infinite;
+}
+
+.tiltRight {
+    animation: tiltRight 4s ease infinite;
+}
+
+.tiltLeft {
+    animation: tiltLeft 4s ease infinite;
+}
+
+.spin {
+    animation: spin 3s linear infinite;
+}
+
+.zoomInOut {
+    animation: zoomInOut 2s ease infinite;
 }
 
 .work-experience .tech img {
