@@ -421,6 +421,59 @@ h3 {
     transform: scale(1.05);
 }
 
+.contact {
+    padding: 100px 20px 50px 20px;
+}
+
+.contact p {
+    font-size: 14px;
+    font-weight: normal;
+    color: #232323;
+}
+
+.contact .card {
+    min-height: auto;
+    padding: 20px;
+}
+
+.contact img {
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+}
+
+.contact .card p {
+    font-size: 12px;
+}
+.contact .get-link {
+    display: flex;
+    justify-content: end;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 20px;
+}
+
+.footer p {
+    font-size: 12px;
+    font-weight: normal;
+    color: #232323;
+}
+
+.footer img {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.2s ease;
+}
+
+.footer img:hover {
+    transform: scale(1.05);
+}
+
 @media (max-width: 480px) {
     .hero {
         padding: 100px 40px;
@@ -440,6 +493,14 @@ h3 {
     
     .project-experience {
         padding: 50px 20px;
+    }
+
+    .contact {
+        padding: 50px 40px 30px 40px;
+    }
+
+    .footer {
+        padding: 0 40px;
     }
 
     .card {
