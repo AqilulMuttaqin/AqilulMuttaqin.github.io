@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/css2.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="assets/css/aos.css"/>
     <link rel="shortcut icon" href="assets/images/favicon.svg" style="border-radius: 50%;" type="image/x-icon">
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-smooth-scroll="true" data-offset="40">
@@ -66,13 +66,13 @@
                 <!-- About Me -->
                 <section class="about" data-aos="fade-down" data-aos-delay="400">
                     <div class="row">
-                        <div class="col-md-6 text-center text-md-start order-2 order-md-1" data-aos="fade-left" data-aos-delay="400">
+                        <div class="col-md-6 text-center text-md-start order-2 order-md-1">
                             <h3 class="mb-4">About Me</h3>
                             <p>Undergraduate student in D4 Informatics Engineering with experience in various academic projects and internships, 
                                 particularly in web development with a focus on the Laravel framework. Committed and dedicated to becoming a professional web developer.
                             </p>
                         </div>
-                        <div class="col-md-6 order-1 order-md-2" data-aos="fade-right" data-aos-delay="400">
+                        <div class="col-md-6 order-1 order-md-2">
                             <img src="assets/images/it.gif" alt="images">
                         </div>
                     </div>
@@ -81,10 +81,8 @@
     
                 <!-- Education -->
                 <section class="education" data-aos="fade-down" data-aos-delay="400">
-                    <div data-aos="zoom-in" data-aos-delay="600">
-                        <h3>My Education</h3>
-                        <img src="assets/images/education.gif" class="rounded mt-2" alt="">
-                    </div>
+                    <h3>My Education</h3>
+                    <img src="assets/images/education.gif" class="rounded mt-2" alt="">
                     <div class="school text-start mb-4">
                         <div class="row">
                             <div class="col-md-6">
@@ -149,47 +147,50 @@
                             </div>
                         </div>
                     </div>
-                    <h5 class="mb-5" data-aos="zoom-out" data-aos-delay="400">Technology I've Use</h5>
-                    <div class="row tech text-center" data-aos="zoom-in" data-aos-delay="500">
-                        <div class="col-lg-2 col-md-3 col-sm-4 mb-4">
-                            <img src="assets/images/html.png" alt="" class="bounce">
-                            <p class="mt-3">HTML</p>
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-sm-4 mb-4">
-                            <img src="assets/images/css.png" alt="" class="tiltRight">
-                            <p class="mt-3">CSS</p>
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-sm-4 mb-4">
-                            <img src="assets/images/js.png" alt="" class="tiltLeft">
-                            <p class="mt-3">JavaScript</p>
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-sm-4 mb-4">
-                            <img src="assets/images/php.png" alt="" class="spin">
-                            <p class="mt-3">PHP</p>
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-sm-4 mb-4">
-                            <img src="assets/images/laravel.png" alt="" class="zoomInOut">
-                            <p class="mt-3">Laravel</p>
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-sm-4 mb-4">
-                            <img src="assets/images/git.png" alt="" class="bounce">
-                            <p class="mt-3">Git</p>
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-sm-4 mb-4">
-                            <img src="assets/images/bootstrap.png" alt="" class="tiltRight">
-                            <p class="mt-3">Bootstrap</p>
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-sm-4 mb-4">
-                            <img src="assets/images/figma.png" alt="" class="tiltLeft">
-                            <p class="mt-3">Figma</p>
-                        </div>
-                    </div>                
+                    <div data-aos="zoom-in" data-aos-delay="400">
+
+                        <h5 class="mb-5">Technology I've Use</h5>
+                        <div class="row tech text-center">
+                            <div class="col-lg-2 col-md-3 col-sm-4 mb-4">
+                                <img src="assets/images/html.png" alt="" class="bounce">
+                                <p class="mt-3">HTML</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 mb-4">
+                                <img src="assets/images/css.png" alt="" class="tiltRight">
+                                <p class="mt-3">CSS</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 mb-4">
+                                <img src="assets/images/js.png" alt="" class="tiltLeft">
+                                <p class="mt-3">JavaScript</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 mb-4">
+                                <img src="assets/images/php.png" alt="" class="spin">
+                                <p class="mt-3">PHP</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 mb-4">
+                                <img src="assets/images/laravel.png" alt="" class="zoomInOut">
+                                <p class="mt-3">Laravel</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 mb-4">
+                                <img src="assets/images/git.png" alt="" class="bounce">
+                                <p class="mt-3">Git</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 mb-4">
+                                <img src="assets/images/bootstrap.png" alt="" class="tiltRight">
+                                <p class="mt-3">Bootstrap</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 mb-4">
+                                <img src="assets/images/figma.png" alt="" class="tiltLeft">
+                                <p class="mt-3">Figma</p>
+                            </div>
+                        </div>          
+                    </div>
                 </section>
                 <!-- End of Work Experience -->
     
                 <!-- Project Experience -->
                 <section class="project-experience" data-aos="fade-down" data-aos-delay="400">
-                    <h3 class="mb-4" data-aos="zoom-in" data-aos-delay="500">Project Experience</h3>
+                    <h3 class="mb-4">Project Experience</h3>
                     <p>The projects I have created play a crucial role in supporting my learning journey as a programmer.</p>
                     <div class="row">
                         <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
@@ -248,7 +249,7 @@
 
             <!-- Contact -->
             <section class="contact" id="contact" data-aos="fade-down" data-aos-delay="400">
-                <h3 class="mb-3" data-aos="zoom-in" data-aos-delay="400">Contact Me</h3>
+                <h3 class="mb-3">Contact Me</h3>
                 <p>If you would like to get in touch, feel free to reach out through any of the platforms below. 
                     I am always open to discussing new projects, creative ideas, or opportunities to be part of your vision. 
                     Looking forward to connecting with you :)
@@ -317,7 +318,7 @@
         </div>
     </div>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/aos.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
