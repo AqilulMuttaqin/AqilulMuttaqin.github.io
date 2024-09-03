@@ -113,6 +113,26 @@ h3 {
     color: #F1FAEE;
 }
 
+.btn-sm {
+    height: 24px;
+    width: 100px;
+    border-radius: 10px;
+    line-height: 28px;
+    text-align: center;
+    display: inline-block;
+    padding: 0 20px;
+    color: #F1FAEE;
+    font-size: 11px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    transform: scale(1.05);
+}
+
+.btn-sm:hover {
+    color: #F1FAEE;
+}
+
 .btn-gradient-primary {
     background: linear-gradient(to right, #1D3557, #457B9D);
     border: none;
@@ -173,11 +193,21 @@ h3 {
     text-align: justify;
 }
 
+@keyframes bounce-abaout {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
 .about img {
     width: 100%;
     max-width: 100%;
     height: 230px;
     object-fit: cover;
+    animation: bounce 3s ease infinite;
 }
 
 .education {
@@ -330,4 +360,97 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.project-experience {
+    padding: 100px 20px;
+}
+
+.card {
+    border: none;
+    background-color: #F1FAEE;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease;
+    min-height: 380px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.project-experience p {
+    font-size: 14px;
+    font-weight: normal;
+    color: #232323;
+}
+
+.project-experience h5 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #232323;
+    padding: 0 10px;
+}
+
+.project-experience img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.project-experience p {
+    font-size: 12px;
+    padding: 0 10px;
+}
+
+.project-experience .get-link {
+    padding: 0 10px 10px 0;
+    display: flex;
+    justify-content: end;
+    bottom: 0;
+}
+
+.project-experience .btn-md {
+    transition: transform 0.2s ease;
+}
+
+.project-experience .btn-md:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 100px 40px;
+    }
+
+    .about {
+        padding: 50px 40px;
+    }
+
+    .education {
+        padding: 50px 40px;
+    }
+
+    .work-experience {
+        padding: 50px 40px;
+    }
+    
+    .project-experience {
+        padding: 50px 20px;
+    }
+
+    .card {
+        min-height: 350px;
+    }
+
+    .col-sm-6 {
+        width: 50%;
+    }
+
+    .tech .col-sm-4 {
+        width: 33.33%;
+    }
 }
