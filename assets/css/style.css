@@ -467,7 +467,9 @@ h3 {
 .footer img {
     width: 25px;
     height: 25px;
+    border-radius: 50%;
     transition: transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .footer img:hover {
